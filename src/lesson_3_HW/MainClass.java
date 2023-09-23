@@ -1,7 +1,5 @@
 package lesson_3_HW;
 
-import java.util.Arrays;
-
 public class MainClass {
     public static void main(String[] args) {
         WorkWithMassive matrixClass = new WorkWithMassive();
