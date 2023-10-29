@@ -36,7 +36,7 @@ public class Game {
                 }
 
             }
-        } while (inputKey != EXIT_BUTTON);
+        } while (robotInBattle.isRobotAlive());
         System.out.println("Exit from the game...");
     }
 

@@ -11,16 +11,14 @@ public class ListOfRobots {
 
 
     public static Robot getNextRobot(Robot inputRobot) {
-        if (inputRobot == null) {
+        int lastRobotIndex = robotArrayList.size() - 1;
+        if (inputRobot == null || robotArrayList.indexOf(inputRobot) == lastRobotIndex) {
             return robotArrayList.get(0);
         } else {
-            for (Robot robot : robotArrayList) {
-                if (robot != inputRobot) {
-                    return robot;
-                }
-            }
+            int nextRobotPosition = robotArrayList.indexOf(inputRobot) + 1;
+            return robotArrayList.get(nextRobotPosition);
         }
-        return inputRobot;
     }
-
 }
+
+
